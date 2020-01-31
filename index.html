@@ -1,1 +1,159 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hackspree</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BeefUp is a responsive jQuery accordion plugin">
+    <meta name="keywords" content="beefup, jQuery, accordion, plugin, responsive">
+    <link rel="stylesheet" href="css/jquery.beefup.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet'>
+
+<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="img/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<header>
+<h1>
+	hackspree_
+</h1>
+<p class="slogan"><b>Data Sourcing</b> GraphQL API</p>
+	</header>
+
+<main>
+<hr>
+</main>
+
+<footer>
+
+	<p>
+	A Data Sourcing API as a Service 
+	<h5>
+		How it Works?	
+	</h5>
+	<h6> 
+1. Authorized hackspree API clients submit datasourcing requests.
+</br>
+2. Datasourcing requests are voted into a priority queue pipeline.
+</br>
+3. Hackspree Datasourcing Specialists work on most voted datasourcing requests.
+</br>
+4. Hackspree GraphQL Managers integrate the newly sourced data.
+</br>
+	</h6> 
+
+<hr>
+
+<table border = "0">
+         <tr>
+            <td>
+		    <h5>
+			    General Inquiries & Pricing
+		    </h5>
+		    <h6> 
+			    <b>hello</b>@hackspree.com
+		    </h6>
+	    </td>
+	    <td>
+		    <h5>
+			    Support 
+		    </h5>
+		    <h6> 
+			    <b>support</b>@hackspree.com
+		    </h6>
+	    </td>
+         </tr>
+         
+         <tr>
+            <td>
+		    <h5>
+			    Careers
+		    </h5>
+		    <h6> 
+			    <b>careers</b>@hackspree.com
+		    </h6>
+    
+	    </td>
+            <td>
+	    
+	    </td>
+         </tr>
+      </table>
+
+   	
+	
+	</br>	
+	
+	<h6 class="slogan">
+		<!--
+	  &COPY;2020 hackspree is an opensource online software engineering distributed network for unix userland utilities.
+	  &COPY;2020 hackspree. Made by 1337$ in São Carlos. 
+		-->
+		&COPY;2020 hackspree_
+	</h6>
+	<!--
+	 <img style="width: 10%; height:1%" src="img/good-timing.bold.png"/> -->
+	</p>
+	</br>
+	</br>	
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.beefup.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+
+<script>
+	$(function() {
+		// Open single
+		$('.example-opensingle').beefup({
+						animation: 'slide',
+						openSpeed: 800,
+						closeSpeed: 600,
+						scroll: true,
+						selfClose: true,
+						scrollOffset: -10,
+						openSingle: true
+						//stayOpen: 2
+		});
+	});
+
+new ClipboardJS('.btn');
+
+$("body").niceScroll({
+		     cursorwidth:12,
+		     cursorcolor:'black',
+		     cursorborder:'none',
+		     cursorborderradius:4,
+		     emulatetouch: true,
+		     enablekeyboard: true,
+		     enableobserver: true, // enable DOM changing observer, it tries to resize/hide/show when parent or content div had changed
+
+		     railpadding: { top: 0, right: 10, left: 0, bottom: 0 }, // set padding for rail bar
+		     autohidemode:'leave'
+});  
+
+$( "body" ).keydown(function() {
+	console.log( "Handler for .keypress() called." );
+	$("body").getNiceScroll().resize();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+@font-face {
+	font-family: 'hackspree';
+	/*
+	 * src: url('./fonts/answer.3d-filled-regular.ttf') format('truetype');
+	*/
+	src: url('./fonts/conthrax-sb.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'hackspree_normal';
+	src: url('./fonts/answer.3d-filled-regular.ttf') format('truetype');
+	src: url('./fonts/conthrax-sb.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'term';
+	src: url('./fonts/answer.3d-filled-regular.ttf') format('truetype');
+	src: url('./fonts/conthrax-sb.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: 'footbanner';
+	src: url('./fonts/conthrax.semibold.ttf') format('truetype');
+	src: url('./fonts/conthrax-sb.ttf') format('truetype');
+}
+
+body{
+font-family: 'hackspree';
+font-family: 'term';
+color: black;
+height: 80%;
+width: 90%;
+position: absolute;
+left: 5%;
+right: 5%;
+bottom: 10%;
+line-height: 3em;
+font-size: large;
+background-color: white !important;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+}
+
+hr {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border: 0;    
+	height: 1px;
+	/* 
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0),#9AFF8B, rgba(0, 0, 0, 0));
+	 */
+	 background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+}
+
+pre {
+	font-family: 'term' !important;
+	background-color: white;
+	border-radius: 0.5px;
+	box-shadow: 0 1px 3px 1px grey;
+	color: black !important;
+	/*
+	color: #93ff8d;
+	font-size: small !important;
+	 */	
+	margin: 1em 0;
+	overflow: auto;
+	padding: 30px;
+	position: relative;
+	-moz-tab-size: 2;
+	tab-size: 2;
+	line-height: 0 !important;
+	-webkit-font-smoothing: auto;
+	letter-spacing: 0px !important;
+
+}
+
+article p {
+font-size: small;
+  overflow: hidden;
+}
+header,
+main {
+  display: block;
+  padding: 0px 22%;
+}
+footer{
+  display: block;
+  padding: 0px 25%;
+}
+/*
+background: linear-gradient(90deg, white 3px, transparent 1%) center, linear-gradient(white 3px, transparent 1%) center, #FFC100;
+  background-size: 4px 4px;
+*/
+}
+header,
+footer {
+  text-align: center;
+background: none !important;
+/*
+  background-color: white !important;
+*/
+}
+
+header {
+ /*
+ background: #fff;
+*/
+  padding-top: 20px;
+}
+
+footer > p {
+  margin: 0;
+}
+footer{
+	font-size: 16px;
+line-height: 2em !important;
+}
+article {
+  background: #fff;
+  display: block;
+}
+
+.button {
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  color: #222;
+  display: inline-block;
+  font-weight: bold;
+  padding: 15px 45px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.5, 0.03, 0.5, 0.8);
+  transition: all 0.3s cubic-bezier(0.5, 0.03, 0.5, 0.8);
+}
+
+.button:hover {
+  background: #222;
+  border-color: #222;
+  color: #fff;
+}
+
+.dropdown__menu li {
+  font-size: 16px;
+}
+
+.dropdown__menu a {
+  clear: both;
+  color: inherit;
+  display: block;
+  padding: 3px 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown__menu a:hover {
+	background-color: #f5f5f5;
+}
+
+.dropdown.beefup {
+  border: 0;
+  border-radius: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.dropdown.beefup.is-open .beefup__head::after {
+  border-width: 0 4px 4px;
+  border-color: transparent transparent #222;
+}
+
+.dropdown .beefup__head {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2.5;
+  margin-bottom: 0;
+  padding: 0 30px 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.dropdown .beefup__head::after {
+  border-style: solid;
+  border-width: 4px 4px 0;
+  border-color: #222 transparent transparent;
+  margin-top: -2px;
+  right: 10px;
+}
+
+.dropdown .beefup__body {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.tab__head {
+  list-style: none;
+  margin: 0 0 -1px;
+  padding: 0;
+}
+
+.tab__head li {
+  background: #fff;
+  border: 1px solid #ddd;
+  display: inline-block;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.tab__head li.is-open {
+  border-bottom-color: transparent;
+}
+
+.tab__head a {
+  color: inherit;
+  display: block;
+  font-size: 16px;
+  line-height: 2.5;
+  padding: 0 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.tab__item.beefup {
+  border-radius: 0;
+  display: none;
+  margin: 0;
+}
+
+.tab__item.beefup.is-open {
+  display: block;
+}
+
+.tab__item .beefup__head {
+  display: none;
+}
+
+
+
+table {
+	text-align: center;
+	font-weight: 700;
+	width:100%; 
+	font-size: small;
+      letter-spacing: 0px;
+}
+
+td { 
+	text-align: center;
+		/* 
+margin: 30px;
+*/
+}
+
+/* 
+ * .beefup__head, 
+*/
+.beefup__head, 
+.beefup__body { 
+	background-color: white !important;
+	/* 
+	font: 400 14px/22px "term";	
+	font: 400 14px/22px "open sans", sans-serif;	
+	font-family: 'hackspree_normal';
+	 * padding: 20px 90px !important;
+	 */
+}
+.beefup__head{
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+
+
+.clippy{
+margin-top:-3px;
+position:relative;
+top:3px;
+}
+
+.btn[disabled] 
+.clippy{
+opacity:.3
+}
+
+.slogan
+{
+	width: 100%;
+	display: block;
+		 text-align: right!important;
+		 font-weight: normal;
+		 font-size: 12px;
+		 line-height: 0px;
+		 text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+		 letter-spacing: 0px;		 
+/*
+   text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
+ */
+}
+.beefup {
+	border: 1px solid #9AFF8B !important; 
+}
+
+.beefup__head::after{
+	border-color: #9AFF8B transparent transparent !important;
+}
+
+.nicescroll-rails-vr .nicescroll-cursors {
+	background-color: #9AFF8B !important;
+}
